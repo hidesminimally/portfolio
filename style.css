@@ -1,3 +1,11 @@
+.big_button{
+    width:45%; 
+    height:200px;
+    background-color: #59a3d7;
+    font-family: arial;
+    font-size: 2em;
+}
+
 html {
     height: 100%;
 }
