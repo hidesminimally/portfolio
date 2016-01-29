@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
 </head>
 <body>
   <div class="nav">
@@ -34,13 +35,16 @@
 </div>
 
   <div class="about">
-  <p> <a href="http://www.ashbyvillage.org">Ashby Village</a> is a nonprofit that connects members with each other and with the resources they need to remain active and independent. Ashby Village needed a tool to increase village communication and event generation. I led a team of designers and developers to conceptualize and build that social web application. </p>
+  <p> <a href="http://www.ashbyvillage.org">Ashby Village</a> is a nonprofit that connects members with each other and with the resources they need to remain active and independent. Ashby Village needed a tool to increase village communication and event generation. I led a team of designers and developers to conceptualize and build Ashby Village Square. </p>
   <br>
-
-    <div class="carousel">
-      <img src="images/ashby_index.png">
-      <img src="images/ashby_index.png">
-      <img src="images/ashby_index.png">
+    <div class="single-item">
+      <img src="images/ashby_landing.png" class="small-pic">
+      <img src="images/ashby_reg.png"class="small-pic">
+      <img src="images/ashby_index.png"class="small-pic">
+      <img src="images/ashby_group.png"class="small-pic">
+      <img src="images/ashby_group_settings.png"class="small-pic">
+      <img src="images/ashby_profile.png"class="small-pic">
+      <img src="images/ashby_profile_lead.png"class="small-pic">
     </div>
   <p> With Ashby Village Square, we set out to build an application that is both easy and fun for villagers to use. We first conducted several user interviews to understand core problems that the villagers were facing. The user interface was tailored to an older audience, and the flow was tailored to fit the existing village hierarchy and organizational structure.</p>
   <br>
@@ -66,12 +70,9 @@
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
-    $('.carousel').slick({
+    $('.single-item').slick({
       dots: true,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 1,
-      adaptiveHeight: true
+      arrows: true,
     });
   });
 </script>
