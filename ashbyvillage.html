@@ -38,9 +38,9 @@
   <br>
 
     <div class="carousel">
-      <img src="images/ashby_index.png" class="big-pic">
-      <img src="images/ashby_index.png" class="big-pic">
-      <img src="images/ashby_index.png" class="big-pic">
+      <img src="images/ashby_index.png">
+      <img src="images/ashby_index.png">
+      <img src="images/ashby_index.png">
     </div>
   <p> With Ashby Village Square, we set out to build an application that is both easy and fun for villagers to use. We first conducted several user interviews to understand core problems that the villagers were facing. The user interface was tailored to an older audience, and the flow was tailored to fit the existing village hierarchy and organizational structure.</p>
   <br>
@@ -67,7 +67,11 @@
 <script type="text/javascript">
   $(document).ready(function(){
     $('.carousel').slick({
-      accessibility: true
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: true
     });
   });
 </script>
