@@ -18,7 +18,6 @@ a:hover {
   color: #E6E7E8;
 }
 
-
 div {
     display: block;
 
@@ -70,6 +69,20 @@ h5 {
     text-transform: uppercase;
 }
 
+hr {
+  margin-bottom: 8px;
+}
+
+i {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #383838;
+    line-height: 25px;
+    text-transform: none;
+    letter-spacing: 0.5px;
+}
+
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -87,6 +100,16 @@ p1 {
 
 }
 
+li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  margin-left: 15px;
+  color: #383838;
+    line-height: 25px;
+    text-transform: none;
+    letter-spacing: 0.5px;
+}
 
 .nav {
   position: fixed;
@@ -105,7 +128,6 @@ p1 {
 
 .menu ul {
   display: table-row;
-
 }
 
 .menu ul li {
@@ -154,9 +176,13 @@ p1 {
 }
 
 .profile-pic {
-  width: 150px;
   vertical-align:middle;
   display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+  object-fit: cover;
 }
 
 .name {
@@ -346,8 +372,18 @@ a:hover h4 {
 }
 
 /* Resume */
-.resume {
-  padding: 0 400px 50px 400px;
+
+.company {
+  padding-bottom: 10px;
+}
+
+.company h2, p {
+  display: inline;
+}
+
+.company-date {
+  float: right;
+  display: inline;
 }
 
 /* Projects */
