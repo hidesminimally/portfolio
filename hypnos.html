@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daniel Ming-Xue Li</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="nav">
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html"><i class="fa fa-home fa-2x"></i></a></li>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="resume.html">RESUME</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="bio">
+  <a href="https://www.amazon.com/Hypnos-Your-Personal-Meditation-Assistant/dp/B072S7RW3D/ref=sr_1_2?s=digital-skills&amp;ie=UTF8&amp;qid=1498947156&amp;sr=1-2&amp;keywords=hypnos">
+    <img src="images/hypnos.png" class="portfolio-profile">
+  </a>
+  <div class="name">
+    <h1>Hypnos</h1>
+    <h2>Side Project: Alexa API</h2>
+  </div>
+</div>
+
+<div class="about">
+  <img src="images/hypnos-big.png" class="big-pic">
+
+  <h5> What is Hypnos? </h5>
+  <p>
+  Hynpos: your personal meditation assistant. Hypnos gently guides you through various themed sessions on everything from stress to sleep. It only takes a few minutes to change the rest of your day with Hypnos. Hypnos offers bite-sized meditations to try when you're too busy, and offers specific meditative sessions based on your emotional state.
+    <br> <br>
+  Anxious? Hypnos provides meditation that has been shown to reduce both daily stress and perceived stress.[1]
+    <br> <br>
+  Stay focused! Routine meditation has been proven to show improvements in attention, focus and the ability to ignore distractions. [2]
+  </p>
+  <h5> Motivation: </h5>
+  <br> <br>
+  <p>I’ve always had trouble falling asleep. Often times, if I’m tossing and turning for longer than 20 minutes, I just pop the magical pink little pill, Benadryl. This was a pretty consistent habit for most of college, and I didn’t think much off it. A few close friends recently told me about a recent <a href="http://www.health.harvard.edu/blog/common-anticholinergic-drugs-like-benadryl-linked-increased-dementia-risk-201501287667">study</a> that linked anticholinergic drugs like Benadryl to dementia. So, obviously the solution was to find a healthy alternative like Prozac or marijuana to help the trouble sleeping.</p>
+  <br> <br><br>
+  <p>Just kidding, I just continued taking Benadryl. After I moved to SF, it was even more difficult for me to fall asleep every night — I would stare at the ceiling for hours, before giving in and taking another little pink pill. One night, I was desperate for solutions and I found a beautiful iPhone application that said it would put you to sleep in 60 seconds.</p>
+  <br><br>
+  <p><img src="images/pulse-app.png" alt="Screenshot"   class="big-pic"/></p>
+  <br><br>
+  <p>Half awake and delusional, I downloaded it. This is a demo of the app:
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KxFxbQWdUd4" frameborder="0" allowfullscreen></iframe></p>
+  <br><br>
+  <p>As the video shows, the app requires you to be staring at the screen while you&rsquo;re supposedly falling asleep in 60 seconds.
+    Extreme frustration came out of this, but also the impulse to build something similar to this application for the Amazon Echo. I hacked together a meditation application, or skill, for the Amazon Echo that walks users through sleeping and breathing meditations. You can find the source <a href="https://github.com/lilshim/hypnos">here</a>.</p>
+
+  <br><br>
+    <a href="https://www.amazon.com/Hypnos-Your-Personal-Meditation-Assistant/dp/B072S7RW3D/ref=sr_1_2?s=digital-skills&amp;ie=UTF8&amp;qid=1498947156&amp;sr=1-2&amp;keywords=hypnos">
+      <img src="images/hypnos.png" class="big-pic">
+    </a>
+
+  <br><br>
+
+  <p>Developing the app was fairly straight forward. Finding tutorials and <a href="https://developer.amazon.com/alexa-skills-kit/alexa-skill-quick-start-tutorial">documentation</a> for how to get things running with Amazon’s suite of products wasn’t difficult. There were a few frustrating parts:</p>
+  <br><br>
+  <ul>
+    <li><p>1. Forcing the developer to use the developer dashboard to input JSON code for utterances, the intent schema, and custom slot types. Would have been a much smoother experience if I could upload my own files in a specific format for those.</p></li>
+    <br><br>
+    <li><p>2. I went through 3 rounds of certification reviews before I was approved, and sometimes I didn’t do anything to change a specific problem and it was resolved on the next review. It doesn’t look like I’m the only one <a href="https://github.com/AreYouFreeBusy/AlexaSkillsKit.NET/issues/5">experiencing this</a></p></li>
+    <br><br>
+    <li><p>3. Upon looking at the template python code, I thought that there must have been an easier way to organize and structure the code. Thankfully, I found <a href="https://github.com/johnwheeler/flask-ask">Flask-Ask</a>, and, having used Flask before, I found developing much more intuitive.</p></li>
+  </ul>
+  <br><br><br><br>
+  <p>My app doesn’t actually help me with my sleeping troubles. In the process of building this I realized I should probably just accept that there isn’t a great technological solution to my sleeping problems. In fact, distancing myself from technology is probably the best solution for this problem — turning off the glowing rectangles for a little while before sleeping and taking a walk, reading, or hang out with friends have worked well for me lately.</p>
+  <br><br>
+  <h2>Technologies</h2>
+  <a href="https://developer.amazon.com/en-US/docs/alexa/alexa-voice-service/api-overview.html">
+    <img src="images/alexa.png" class="profile-pic"></img>
+  </a>
+</div>
+<div class="nav-projects">
+  <a class="next" href="forte.html">
+    <div class="icon">
+      <i class="fa fa-arrow-right"></i>
+    </div>
+  </a>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73148124-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>
